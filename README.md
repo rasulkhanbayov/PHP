@@ -54,6 +54,7 @@ If there was an error logging in, display a message about it above the login for
     - Date: required, valid date
     - Date: required, valid date
     - Total slots: required, number (How many people can apply for this date)
+
 Display all errors on the page! The form must be persistent, so if an error occurs, the form should keep the input values. After the new date was added, redirect the browser to the list page..
 
 # Extra features
