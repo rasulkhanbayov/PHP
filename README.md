@@ -26,12 +26,14 @@ The National Health Centre organizes vaccinations at various times in its centra
   - e-mail: required, unique for each user, email format
   - Password: required
   - Password confirmation: required, must match the password
- In case of an error, display appropriate error messages! The form must be persistent, so after an error, previously filled data should remain in the form. After a successful registration, go to the login page!
+
+In case of an error, display appropriate error messages! The form must be persistent, so after an error, previously filled data should remain in the form. After a successful registration, go to the login page!
 
 - On the login page users can identify themselves with their e-mail address and password:
   - e-mail: required, unique, email format
   - Password: required
- If there was an error logging in, display a message about it above the login form! After successful login, redirect the user to the list page!
+
+If there was an error logging in, display a message about it above the login form! After successful login, redirect the user to the list page!
 
 # Details of booking a date
 After logging in, clicking on the "Book this date" button will take the user to the page detailing the given time. Here the site must display the date, time, and the logged in user's data (name, address and SSN number), and a checkbox to accept terms and conditions (eg that it is mandatory to show up on the appointment after booking it, or that there may be side effects of vaccination).
