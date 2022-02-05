@@ -36,26 +36,28 @@ In case of an error, display appropriate error messages! The form must be persis
 If there was an error logging in, display a message about it above the login form! After successful login, redirect the user to the list page!
 
 # Details of booking a date
-After logging in, clicking on the "Book this date" button will take the user to the page detailing the given time. Here the site must display the date, time, and the logged in user's data (name, address and SSN number), and a checkbox to accept terms and conditions (eg that it is mandatory to show up on the appointment after booking it, or that there may be side effects of vaccination).
-Then, by clicking on the "Confirm" button, the system will record the user's name for that time. If the checkbox is not checked, display an error message on the page! After a successful booking, the user will be taken to a separate page where the system informs them that the booking was successful.
-If the user already has an appointment, ...
-... the list page's top should show the details of the booked date. Design this part to be extra noticeable!
-... under the booked date, a button should show up, pressing which cancels the appointment and resets the list page.
-... the "Book this date" link does not show up for dates in the list.
+- After logging in, clicking on the "Book this date" button will take the user to the page detailing the given time. Here the site must display the date, time, and the logged in user's data (name, address and SSN number), and a checkbox to accept terms and conditions (eg that it is mandatory to show up on the appointment after booking it, or that there may be side effects of vaccination).
+- Then, by clicking on the "Confirm" button, the system will record the user's name for that time. If the checkbox is not checked, display an error message on the page! After a successful booking, the user will be taken to a separate page where the system informs them that the booking was successful.
+
+# If the user already has an appointment, ...
+- ... the list page's top should show the details of the booked date. Design this part to be extra noticeable!
+- ... under the booked date, a button should show up, pressing which cancels the appointment and resets the list page.
+- ... the "Book this date" link does not show up for dates in the list.
 
 # Admin functions
-Have a special user, admin (email: admin@nemkovid.hu, password: admin), who can do two things:
-At the bottom of the date details page (where a user could apply), the admin sees a list of users who applied for that date. (Show name, SSN, and email address!)
 
-The list page contains a new "Post a new date" link. By clicking on it, the admin can add a new available date (on a separate page, only accessible by the admin user) with the following input data:
+- Have a special user, admin (email: admin@nemkovid.hu, password: admin), who can do two things:
+  - At the bottom of the date details page (where a user could apply), the admin sees a list of users who applied for that date. (Show name, SSN, and email address!)
 
-Date: required, valid date
-Date: required, valid date
-Total slots: required, number (How many people can apply for this date)
+  - The list page contains a new "Post a new date" link. By clicking on it, the admin can add a new available date (on a separate page, only accessible by the admin user) with the following input data:
+
+    - Date: required, valid date
+    - Date: required, valid date
+    - Total slots: required, number (How many people can apply for this date)
 Display all errors on the page! The form must be persistent, so if an error occurs, the form should keep the input values. After the new date was added, redirect the browser to the list page..
 
 # Extra features
-On the list page, display the dates of the given month in calendar format. Weeks as rows, days (Monday to Sunday) as columns, and times listed inside each day. If using this format, the "Book this date" link can be the time itself inside a table cell.
-If an user clicks the "Book this date" while not logged in, remember it, and after logging in, redirect to the correct date details page instead of the list page. Technical help: This information is usually preserved inside the URL on login pages, but you can use the session as well.
-Solve the changing of the displayed month with AJAX, without reloading all of the index page!
-On the registration and admin/new date pages: instead of above/near the forms, display error messages next to the relevant input fields!
+- On the list page, display the dates of the given month in calendar format. Weeks as rows, days (Monday to Sunday) as columns, and times listed inside each day. If using this format, the "Book this date" link can be the time itself inside a table cell.
+- If an user clicks the "Book this date" while not logged in, remember it, and after logging in, redirect to the correct date details page instead of the list page. Technical help: This information is usually preserved inside the URL on login pages, but you can use the session as well.
+- Solve the changing of the displayed month with AJAX, without reloading all of the index page!
+- On the registration and admin/new date pages: instead of above/near the forms, display error messages next to the relevant input fields!
